@@ -1,0 +1,9 @@
+player_num: 2 board_N: 3 win_cnt: 3
+win_flag: 1
+steps: 0 row: 0 col: 0 value: X duration(ms): 2000
+steps: 1 row: 2 col: 0 value: O duration(ms): 1000
+steps: 2 row: 0 col: 1 value: X duration(ms): 1000
+steps: 3 row: 2 col: 1 value: O duration(ms): 1000
+steps: 4 row: 1 col: 0 value: X duration(ms): 1000
+steps: 5 row: 1 col: 2 value: O duration(ms): 1000
+steps: 6 row: 1 col: 1 value: X duration(ms): 1000
