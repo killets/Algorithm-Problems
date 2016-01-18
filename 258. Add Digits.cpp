@@ -12,7 +12,7 @@ int next(int n) {
     return sum;    
 }
 
-int ishappy(int n) {
+int addDigits(int num) {
     int slow =n;
     do {
         slow = next(slow);       
@@ -22,5 +22,5 @@ int ishappy(int n) {
 }
 
 int main() {
-    cout<<ishappy(29)<<endl;
+    cout<<addDigits(29)<<endl;
 }
