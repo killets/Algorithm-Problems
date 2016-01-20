@@ -1,3 +1,7 @@
+// 2 since a0 and a1 are the same old rober problem, we can make it a helper function; then
+//  result = max {old(0, n-2), old(1,n-3)+nums[n-1]};
+//  see: https://leetcode.com/discuss/36544/simple-ac-solution-in-java-in-o-n-with-explanation
+
 // 1 dp idea: when it has cycle, it can be viewed as two no cycle problem, a0,n and a1,n; 
 //  if nums[i] not taken, then nums[0] can be taken, then result = a0,i-1; If taken, then
 //  nums[0] not taken, nums[i-1] not taken, then result = a1,n-2 + nums[i];
