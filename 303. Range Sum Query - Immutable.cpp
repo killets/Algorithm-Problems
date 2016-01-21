@@ -1,3 +1,4 @@
+// 2 update: sum size+1; beats 14.09 ---> 96.56%
 // 1 dp idea: sum[2,5] = sum[0,5] -sum[0,2] +num[2] = sum[0,5] -sum[0,1];
 
 include<iostream>
