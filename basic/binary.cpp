@@ -45,7 +45,7 @@ int main() {
     cout<<x;
     
 }
-
+------------------------------------------------------------
 Method 2:
 vector<bool> d2b2(int num) {
     int b = 1; // 1,2,4,8,16
@@ -66,6 +66,19 @@ vector<bool> d2b2(int num) {
     }    
     return digits;
 }
+-------------------------------------------------------------------------
+Method 3: // use bitwise and, 1010 & 1000 = 1000 !=0, so the 4th digit is 1
+vector<bool> d2b3(int num) {
+    vector<bool> digits(32);
+    int k = 31;
+    for(unsigned i= (1<<31); i>=1; i=i/2, k--) {
+        cout<<(num&i)<<" ";
+        if((num&i)>0)
+        digits[31-k]=true;
+    }
+   return digits;
+}
+
 
 2 二进制转换为数
 3 二进制运算
