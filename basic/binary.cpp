@@ -78,7 +78,14 @@ vector<bool> d2b3(int num) {
     }
    return digits;
 }
-
+------------------------------------------------------------------
+Method 4: use recursive function
+// by changing the cout order, we can print in reverse order
+// 基本思想是，打印一个二进制数，即先打印左边的数（num/2），再打印最后一位即num%2
+void d2b4(int num) {
+if(num>1) d2b4(num/2);
+cout<<num%2; 
+}
 
 2 二进制转换为数
 3 二进制运算
