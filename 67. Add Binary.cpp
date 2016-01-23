@@ -1,3 +1,6 @@
+//别人的算法，主要差异在于它的while是用的or,然后再在其中去判断分支，
+//a还有位，b还有位，或者有进位[见comment]
+
 #include<iostream>
  #include<stack>
  #include<string>
