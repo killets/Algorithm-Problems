@@ -1,3 +1,6 @@
+// 别人算法，是考虑不回头看，但x=x->next时，x->next等于以（x->next）为头的
+// 相同问题中的下一个不重复的元素；使用recursive way，见comments
+
 // 1 double pointer, left and right, 
 // sorted array, 找重复回头看，因为要保住第一个
 // left 到right之间的都是重复元素，当找到下一个不重复时，
