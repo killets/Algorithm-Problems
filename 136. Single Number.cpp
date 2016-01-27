@@ -1,3 +1,5 @@
+// 别人算法，use xor, 0^x =x, x^x=0, x^y^y = x;
+
 // insert and toggle one element by element in hash map, then check the single one
 
 class Solution {
