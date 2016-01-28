@@ -11,6 +11,9 @@
 // 比较大，但没有想到双指针怎么移动，尤其是中间有两条高线时怎么解释。 现在可以解释了：假设左线或右线有一根
 // 线移动到了中间高位置，那么另一个线低，于是向中间移动，移动到中间另一高位置。这种情况也能解决。
 
+// Note待解困扰：左指针向右移动一位，最大值会不会在右指针的右边？也就是这种情况有没有被考虑到。或漏掉。
+// 答案是不会漏，https://lh5.googleusercontent.com/OTkFJ7i-dEpYyQvIWd6lDjvSc8Sv29wb-g_ZEKtEEl3WYORPezqvvqC5yMicOYx108qmKQ=w1656-h829
+
 // Time Limit Exceeded 
 
 // my idea is search every combination of two out of n points to calculate
@@ -22,6 +25,24 @@
 class Solution {
 public:
     int maxArea(vector<int>& height) {
+        int max=0;
+        int left=0, right=height.size()-1;
+        while(left<right) {
+            int tmp = (right-left)*min(height[left],height[right]);
+            max = tmp>max? tmp : max;
+            if(height[left]<height[right])
+                left++;
+            else if(height[left]>height[right])
+                right--;
+            else{
+                left++; 
+                right--;
+            }
+        }
+        return max;
+    }
+    
+    int maxArea2(vector<int>& height) {
         int max =0;
         int left=0;
         for(int i=0; i<height.size();i++) {
