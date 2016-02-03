@@ -1,3 +1,5 @@
+// 别人算法，不知道是怎样check合法性的，异常简洁，背后有什么思想?
+
 // 结果比较图 https://drive.google.com/open?id=0B0BJAgFiD4jIbzNneUQxNENodjQ
 // version 4: change vector<bool> to string, 加快了很多很多，0ms， 34% 最快一档！说明直接string比vector快
 
