@@ -1,3 +1,5 @@
+// version 3: 继续加快，更新check函数，使用int的加减代替stack操作. 9%
+
 // version 2: 继续加快，不等到最后才去检查是否合法，如果不合法直接退出, check增加pos参数
 // 还是6 %
 
@@ -21,17 +23,16 @@ public:
         return result;
     }
 private:
-    //check if a combination is well-formed 
+ //check if a combination is well-formed 
     bool check(vector<bool> in, int pos) {
-        stack<bool> s;
+       int sum=0;
         for(int i=0; i<pos; i++) {
             if(in[i])
-                s.push(true);
-            else{//遇到反括号，就找正括号匹配，没有就报错
-                if(s.empty())
-                    return false;
-                else
-                    s.pop();
+                sum++;
+            else{
+                sum--;
+                if(sum<0)
+                return false;
             }
         }
         return true;
