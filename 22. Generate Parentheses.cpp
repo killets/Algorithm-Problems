@@ -1,8 +1,10 @@
-// 56行更新后，依旧很慢，6%         for(int i=pos; i <= 2*p_cnt && cnt>0; i++){//再更新，继续缩小
-// 下面的代码有错，请找出！
-// 错误现象是n=3时，输出正确；n=5时，输出不正确，现象是输出短了，而且没有
-// （）（）（）（）（）这种.
-// 正解见comments；此方法跑出来结果很慢，只有4%
+// version 2: 继续加快，不等到最后才去检查是否合法，如果不合法直接退出, check增加pos参数
+// 还是6 %
+
+//很慢，除了55行更改之外，还可以提前结束，减少不可能的比较，当")"比(多时，提前结束
+// 已经使用的(个数：p.size()/2 - cnt，（和）总数i
+// i -(p.size()/2 -cnt) <= (p.size()/2-cnt) 
+// 6%
 
 // there are two roads to solve this problem,
 // first is to generate all combinations then check if it's valid
@@ -19,12 +21,13 @@ public:
         return result;
     }
 private:
-    bool check(vector<bool> in) {
+    //check if a combination is well-formed 
+    bool check(vector<bool> in, int pos) {
         stack<bool> s;
-        for(auto e: in) {
-            if(e)
-                s.push(true);a
-            else{
+        for(int i=0; i<pos; i++) {
+            if(in[i])
+                s.push(true);
+            else{//遇到反括号，就找正括号匹配，没有就报错
                 if(s.empty())
                     return false;
                 else
@@ -36,29 +39,32 @@ private:
     
     
     void helper(vector<bool>& p, vector<string>& result, int pos, int cnt){
-         vector<bool> pp{1,0,1,0,1,0,1,0,0,1};
-                if(pp==p)
-                cout<<"Find target"<<endl;
+        /* //用来检查是否每个组合都能遍历到，下面那个错误就导致pp未能检查到
+        vector<bool> pp{1,0,1,0,1,0,1,0,1,0};
+         if(pp==p)
+         cout<<"Find target"<<endl;*/
         
-        if(cnt==0){
-            if(check(p)) {
-               
-                
-                string found(p.size(),' ');
-                for(int i=0; i<p.size(); i++){
-                    found[i]= p[i] ? '(': ')';
-                }
-                result.push_back(found);
-            }
+        if(!check(p, pos))
             return;
-        }
         
-        for(int i=pos; i<p.size()&&cnt>0; i++){
+         if(cnt==0){
+             //if(check(p)) {
+                 string found(p.size(),' ');
+                 for(int i=0; i<p.size(); i++){
+                     found[i]= p[i] ? '(': ')';
+                 }
+                 result.push_back(found);
+            // }
+             return;
+         }
+        
+          int p_cnt = (p.size()/2)-cnt;
+ //       for(int i=pos; i<=p.size()-cnt&&cnt>0&&pos<=p.size()-2*cnt; i++){//更新-cnt，反括号多了
+          for(int i=pos; i <= 2*p_cnt && cnt>0; i++){//再更新，继续缩小
             p[i]=1;
-            helper(p,result,pos+1,cnt-1);
-            p[i]=0;
+            helper(p,result,i+1,cnt-1); //Note!!!!!!!!!!!!!!害我检查了两个小时!!!!!!!!!!!!!!!!!!
+            p[i]=0;   //不是pos+1;
         }
-        
     }
 
 };
