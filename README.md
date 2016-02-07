@@ -13,3 +13,4 @@ Multiple algorithms, need to re-study
 * 93, backtracking 和 DFS的关系?
 * 55, 别人算法里面的逻辑？贪心而不是DP?
 * 80, 最多允许存2次
+* 28, 他们怎样使得code如此简洁?
