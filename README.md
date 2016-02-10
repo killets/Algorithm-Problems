@@ -8,6 +8,7 @@ Not very clear, need to re-study
 
 * 134,
 * 94, 树的遍历的非递归算法，用stack存轨迹
+* 15，3SUM(2sum)时，two pointers的使用，双向移动
 
 Multiple algorithms, need to re-study
 
@@ -17,3 +18,4 @@ Multiple algorithms, need to re-study
 * 55, 别人算法里面的逻辑？贪心而不是DP?
 * 80, 最多允许存2次
 * 28, 他们怎样使得code如此简洁?
+* 15, 2sum::two pointers的使用，o(n^2)->o(n)
