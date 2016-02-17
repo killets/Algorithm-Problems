@@ -8,7 +8,8 @@ Not very clear, need to re-study
 
 * 134,
 * 94, 树的遍历的非递归算法，用stack存轨迹
-* 15，3SUM(2sum)时，two pointers的使用，双向移动
+* 15, 3SUM(2sum)时，two pointers的使用，双向移动
+* 98, 类似树的中序遍历，存一个pre节点用于比较BST
 
 Multiple algorithms, need to re-study
 
