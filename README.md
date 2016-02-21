@@ -20,3 +20,4 @@ Multiple algorithms, need to re-study
 * 80, 最多允许存2次
 * 28, 他们怎样使得code如此简洁?
 * 15, 2sum::two pointers的使用，o(n^2)->o(n)
+* 90, 组合问题中有重复元素，DP，backtracking, etc.
