@@ -21,3 +21,4 @@ Multiple algorithms, need to re-study
 * 28, 他们怎样使得code如此简洁?
 * 15, 2sum::two pointers的使用，o(n^2)->o(n)
 * 90, 组合问题中有重复元素，DP，backtracking, etc.
+* 119,120, DP的bottom up简化了问题，并且注意倒序可避免旧值覆盖
