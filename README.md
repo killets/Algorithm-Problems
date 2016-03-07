@@ -24,3 +24,4 @@ Multiple algorithms, need to re-study
 * 15, 2sum::two pointers的使用，o(n^2)->o(n)
 * 90, 组合问题中有重复元素，DP，backtracking, etc.
 * 119,120, DP的bottom up简化了问题，并且注意倒序可避免旧值覆盖
+* 139, DP的另一种写法，倒着推，和LinearPartion很像
