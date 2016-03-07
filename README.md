@@ -11,6 +11,7 @@ Not very clear, need to re-study
 * 15, 3SUM(2sum)时，two pointers的使用，双向移动
 * 98, 类似树的中序遍历，存一个pre节点用于比较BST
 * 130, Union-find
+* 143, 属于“智力“题，考操作，算是我不太喜欢的题型
 
 Multiple algorithms, need to re-study
 
