@@ -1,3 +1,12 @@
+//update: 自己总结见后
+ //解答图片：https://drive.google.com/open?id=0B0BJAgFiD4jITHMzTFZ5N01Jazg
+ //这题完全与102 level order Traversal一致，只需要增加层的奇偶信息，然后选择是insert还是push_back.
+ // 解法也是1，iterative; 2. recursive；见我的图片。
+ //别人算法进一步将1优化，因为知道了每一层的大小，就直接新建了一个那么大的vector，然后根据奇偶标志位来
+ //判断是顺序还是逆序放入元素。速度更快！
+ //另外，我自己写的算法其实是1的变种，将index信息存入新结构体传入queue中，稍慢，但如果index有其它作用时，这样做
+ //也具有普遍意义。
+ 
 /**
  * Definition for a binary tree node.
  * struct TreeNode {
@@ -66,3 +75,4 @@ private:
     //     x >>= 1;
     //     return (x == 1);
     // }
+    
