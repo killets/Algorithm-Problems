@@ -1,3 +1,12 @@
+//update: 别人算法是对的，达成一致。实际上recursive写法最简单；iterative方法即是102按层遍历时记一下层数，返回层数而已。
+//recursive
+class Solution {
+public:
+    int maxDepth(TreeNode* root){
+        if(root==nullptr) return 0;
+        return max(maxDepth(root->left), maxDepth(root->right))+1;
+    }
+};
 //别人算法，首先DFS，树的depth就是左树，右树的最大，+1，而当为空时为0
 //BFS的算法，和我的相似，不过用的是queue
 //我的实际上是DFS的iterative实现
