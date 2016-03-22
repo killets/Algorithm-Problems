@@ -1,4 +1,44 @@
-//别人算法非常巧妙，待理解
+//别人算法非常巧妙，待理解【已经理解了，就是按层访问，然后设置各层的子节点间的link关系；两层循环】
+
+void connect(TreeLinkNode *root) {
+    if (root == NULL) return;
+    TreeLinkNode *pre = root;
+    TreeLinkNode *cur = NULL;
+    while(pre->left) {
+        cur = pre; //一层的开头，设置这一层的子节点间的link连接
+        while(cur) {
+            cur->left->next = cur->right; //当前节点左子的next=当前的右子
+            if(cur->next) cur->right->next = cur->next->left;//右子的next,等于当前的next的left，如果存在的话
+            cur = cur->next;//当前右移一位
+        }
+        pre = pre->left;  //进入下一层
+    }
+}
+
+//等价于：
+
+//题目有要求constant space，所以不用queue 
+//很大的一个假设是有两个孩子，perfect bT, 所以这里直接left;如果没有这个假设，那么需要判断两个问题
+//第一，while outer->left 要改，第二，inner->right->next = inner->next->left要改
+class Solution {
+public:
+    void connect(TreeLinkNode* root) {
+        if(root==nullptr) return;
+        TreeLinkNode* outter = root;
+        TreeLinkNode* inner = nullptr;
+        
+        while(outter->left){//下一层有节点才能设
+            inner = outter;
+            while(inner) {
+                inner->left->next = inner->right; //left存在
+                if(inner->next) inner->right->next = inner->next->left; //很大的一个假设是有两个孩子，所以这里直接left
+                inner = inner->next; //如果没有这个假设，
+            }
+            outter = outter->left;
+        }
+    }
+};
+
 /**
  * Definition for binary tree with next pointer.
  * struct TreeLinkNode {
