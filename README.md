@@ -27,3 +27,4 @@ Multiple algorithms, need to re-study
 * 119,120, DP的bottom up简化了问题，并且注意倒序可避免旧值覆盖
 * 139, DP的另一种写法，倒着推，和LinearPartion很像
 * 114, DFS然后别人第一种写法递归很简洁，第二种方法非递归且空间为o(1)
+* 112, backtracking在tree中的应用，mark
