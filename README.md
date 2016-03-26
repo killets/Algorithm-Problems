@@ -13,6 +13,7 @@ Not very clear, need to re-study
 * 130, Union-find
 * 143, 属于“智力“题，考操作，算是我不太喜欢的题型
 * 127, Word Ladder, 想破脑袋不会
+* 114, 递归函数的理解和写法，实际运行栈图解分析
 
 Multiple algorithms, need to re-study
 
