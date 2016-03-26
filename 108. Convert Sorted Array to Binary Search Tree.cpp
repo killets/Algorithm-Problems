@@ -43,7 +43,7 @@ private:
     
 };
 
-
+//update: https://drive.google.com/open?id=0B0BJAgFiD4jIbDlab3JhTVhjVW8
 //update: 总结
 //方法1，同上，我的第一种写法，先建好空树，然后按照inordr visit的同时设置节点的值；
 //方法2，我的第二种写法，安装inorder，左边cnt/2, 中间一个根，右边cnt-cnt/2-1来建树
