@@ -30,3 +30,8 @@ Multiple algorithms, need to re-study
 * 114, DFS然后别人第一种写法递归很简洁，第二种方法非递归且空间为o(1)
 * 112, backtracking在tree中的应用，mark
 * 129, 非常好的一题，分治时注意看如何将上面的值朝下传
+
+Note
+
+* 2和67避免重复写代码，使用 while(l1||l2||carry)
+* 
