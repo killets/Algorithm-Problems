@@ -34,4 +34,5 @@ Multiple algorithms, need to re-study
 Note
 
 * 2和67避免重复写代码，使用 while(l1||l2||carry)
-* 
+* 121使用一个for动态记录前面的最小，并且计算当前的最大差值，很巧妙
+* 39 combination用backtracking，条件不是cnt而是nums[i]<=target
