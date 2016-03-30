@@ -39,4 +39,4 @@ Note
 * 39 combination用backtracking，条件不是cnt而是nums[i]<=target
 * 14, 看起来复杂，但实质简单
 * 300, DP思想扫除定势，返回值并不一定是dp[n]，比如此处需要遍历找max dp[i]
-* 53, maxEndinghere的想法很好，和14一样，最终结果是dp过程中的最大值maxSofar,并且可优化空间
+* 53, maxEndinghere的想法很好，和300一样，最终结果是dp过程中的最大值maxSofar,并且可优化空间
