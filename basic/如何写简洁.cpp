@@ -3,3 +3,5 @@
 
 
 86题 Partion List中，关于linklist中设置dump假节点，可以简化问题
+
+112 直接调用自身，而不去使用helper函数，简化写法
