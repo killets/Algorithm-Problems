@@ -2,3 +2,5 @@
     dr(n) = 1+((n-1) mod 9)
 
 89. gray code g[i] = i xor (i/2);
+
+13. roman， IV=4， VI=6 because I<v.So -I; V>I, SO +V
