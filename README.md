@@ -15,6 +15,7 @@ Not very clear, need to re-study
 * 127, Word Ladder, 想破脑袋不会
 * 114, 递归函数的理解和写法，实际运行栈图解分析
 * 11, 双指针
+* 137, 什么ones, twos, 模拟三进制
 
 Multiple algorithms, need to re-study
 
