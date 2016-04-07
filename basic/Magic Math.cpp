@@ -4,3 +4,5 @@
 89. gray code g[i] = i xor (i/2);
 
 13. roman， IV=4， VI=6 because I<v.So -I; V>I, SO +V
+
+136. best answer: use xor, 0^x =x, x^x=0, x^y^y = x; 除一个数外其它数均出现2次，找到这个单数
