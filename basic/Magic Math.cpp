@@ -8,3 +8,5 @@
 136. best answer: use xor, 0^x =x, x^x=0, x^y^y = x; 除一个数外其它数均出现2次，找到这个单数
 
 69. newton's method to solve sqrt(x)
+
+96. Unique Binary Serach Trees 的结果可以用卡特兰数表示
