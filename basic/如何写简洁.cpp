@@ -15,3 +15,9 @@
                 for (k=i; k<=j-1; k++)
                     C[i][j] = min (C[i][j], C[i][k] + C[k+1][j]+1);
       常规写法是另外再设一个临时变量，最后赋给目标
+
+Palindrome pair中 
+http://unknown66.blogspot.com/2016/04/leetcode-336-palindrome-pairs.html
+那个while(l<r) 很有意思
+// -++++ --++++ ---+++ 我们常规的是判断两个substring. -和+同时判断 用for(int i=0; i<k; i++)
+//用while之后 当r到达k时，l++；是先判断完-，再判断+
