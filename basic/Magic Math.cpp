@@ -16,3 +16,6 @@
 [组合数公式] https://upload.wikimedia.org/math/9/8/4/9843fef1733422909e0e3c38635e2755.png
 
   也即  https://upload.wikimedia.org/math/9/5/f/95f98d3e99b00412e80165e2e874b8e5.png
+
+直接求杨辉三角中的某一i行第j列的数，可以直接利用公式，从这一行的开头求起，然后求到第j个， 见公式 
+        https://drive.google.com/open?id=0B0BJAgFiD4jIWDcxc3BtRUVKTWM
