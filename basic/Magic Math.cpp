@@ -14,3 +14,5 @@
 [组合数取1，取2，取3，。。取n 合起来是2^n] https://upload.wikimedia.org/math/f/8/6/f86cb8e7067d8323d27eeb76d8aa3c08.png
 
 [组合数公式] https://upload.wikimedia.org/math/9/8/4/9843fef1733422909e0e3c38635e2755.png
+
+  也即  https://upload.wikimedia.org/math/9/5/f/95f98d3e99b00412e80165e2e874b8e5.png
