@@ -21,3 +21,8 @@ http://unknown66.blogspot.com/2016/04/leetcode-336-palindrome-pairs.html
 那个while(l<r) 很有意思
 // -++++ --++++ ---+++ 我们常规的是判断两个substring. -和+同时判断 用for(int i=0; i<k; i++)
 //用while之后 当r到达k时，l++；是先判断完-，再判断+
+
+stl中的初始化要学会简化， todo
+bool *visited = new bool[V];
+    for (int i = 0; i < V; i++)
+        visited[i] = false;
