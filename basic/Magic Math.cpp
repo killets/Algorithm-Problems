@@ -20,3 +20,5 @@
 直接求杨辉三角中的某一i行第j列的数，可以直接利用公式，从这一行的开头求起，然后求到第j个， 见公式 
         https://drive.google.com/open?id=0B0BJAgFiD4jIWDcxc3BtRUVKTWM
     另外还有一个对角直接求的公式，暂时还不知道怎么应用 https://drive.google.com/open?id=0B0BJAgFiD4jIOFFVcFJLMDh2N2M
+
+>Lagrange's four-square theorem
