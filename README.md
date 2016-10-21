@@ -19,6 +19,7 @@ Not very clear, need to re-study
 * 11, 双指针
 * 137, 什么ones, twos, 模拟三进制
 * 361, 419联系起来，把左边和上边当墙，把左上角当做一段起点的标志，w是起点
+* 378, 373 取出最小的然后放进去一个比它大的，这样k次得到k序列
 
 Multiple algorithms, need to re-study
 
