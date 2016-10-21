@@ -18,6 +18,7 @@ Not very clear, need to re-study
 * 114, 递归函数的理解和写法，实际运行栈图解分析
 * 11, 双指针
 * 137, 什么ones, twos, 模拟三进制
+* 361, 419联系起来，把左边和上边当墙，把左上角当做一段起点的标志，w是起点
 
 Multiple algorithms, need to re-study
 
