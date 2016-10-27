@@ -52,3 +52,4 @@ Note
 * 386 树的方法，preorder，还有插入res中的顺序也很赞，一次到位
 * ［思想］84，378, 373共同点是有种不变量的感觉，84题栈中前面的都比它小（大的都弹出去了），后面比它大，直到当前i也比它小，这样找到了两个边界
 * ［方法］282. Expression Add Operators 和227. Basic Calculator II中对没有等号的式子的计算，要多增加一个量pre来处理乘除法。
+* [方法]285 用两个栈分别实现bst中nextPre和nextSucc，类似Closest Binary Search Tree Value II；另外inorder和reverse inorder
